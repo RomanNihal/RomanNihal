@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @RomanNihal
 - 👀 Interested in football
-- 🌱 Currently studying machine learning algorithms
+- 🌱 Currently studying machine learning & deep learning
 - 📫 How to reach me - nihalroman7@gmail.com
 
 <!---
