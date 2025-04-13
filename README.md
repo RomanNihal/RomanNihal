@@ -1,9 +1,18 @@
-- 👋 Hi, I’m @RomanNihal
-- 👀 Interested in football
-- 🌱 Currently studying machine learning & deep learning
-- 📫 How to reach me - nihalroman7@gmail.com
+# Hi, I’m RomanNihal 👋
 
-<!---
-RomanNihal/RomanNihal is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I'm a passionate developer and aspiring data scientist focused on Machine Learning, Deep Learning, and Android development.
+
+## 🔭 Currently working on:
+- **Machine Learning & Deep Learning Projects**: Exploring and experimenting with various models and datasets.
+
+## 🌱 I’m currently learning:
+- Machine Learning algorithms and Deep Learning techniques.
+- 
+## 💬 Ask me about:
+- Machine Learning
+- Deep Learning
+- Android Development (Java)
+
+## 📫 How to reach me:
+- Email: [nihalroman7@gmail.com](mailto:nihalroman7@gmail.com)
+- LinkedIn: [RomanNihal21](https://www.linkedin.com/in/romannihal21)
