@@ -7,7 +7,7 @@ I'm a passionate developer and aspiring data scientist focused on Machine Learni
 
 ## 🌱 I’m currently learning:
 - Machine Learning algorithms and Deep Learning techniques.
-- 
+  
 ## 💬 Ask me about:
 - Machine Learning
 - Deep Learning
@@ -15,4 +15,3 @@ I'm a passionate developer and aspiring data scientist focused on Machine Learni
 
 ## 📫 How to reach me:
 - Email: [nihalroman7@gmail.com](mailto:nihalroman7@gmail.com)
-- LinkedIn: [RomanNihal21](https://www.linkedin.com/in/romannihal21)
