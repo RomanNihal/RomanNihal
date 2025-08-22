@@ -1,17 +1,35 @@
-# Hi, I’m RomanNihal 👋
+# 👋 Hi, I'm Roman Nihal
 
-I'm a passionate developer and aspiring data scientist focused on Machine Learning, Deep Learning, and Android development.
+🎯 **Entry-Level AI Engineer** | Passionate about **Machine Learning**, **Deep Learning**, and **Android Development**
 
-## 🔭 Currently working on:
-- **Machine Learning & Deep Learning Projects**: Exploring and experimenting with various models and datasets.
+---
 
-## 🌱 I’m currently learning:
-- Machine Learning algorithms and Deep Learning techniques.
-  
-## 💬 Ask me about:
-- Machine Learning
-- Deep Learning
-- Android Development (Java)
+## 🚀 About Me
+- 🎓 **B.Sc. in Computer Science & Engineering** @ Green University of Bangladesh (CGPA: 3.85)
+- 🏆 **Academic Excellence** at Green University + Awarded **Best Project**
+- 🔭 Currently an **Administrative Intern** at Green University of Bangladesh
+- 🌱 Always learning — currently diving deeper into **LangChain** and **LangGraph**
+- 🌍 Languages: Bangla (C2), English (C1)
 
-## 📫 How to reach me:
-- Email: [nihalroman7@gmail.com](mailto:nihalroman7@gmail.com)
+---
+
+## 🏆 Certifications & Recognition
+- 📜 **Developing Future Teachers (DFT2.0)** – Green University of Bangladesh
+- 🏅 **Kaggle Certifications & Badges**
+- 🌱 **Employability Skills** – Wadhwani Foundation
+
+---
+
+## 💬 Ask Me About
+- Machine Learning & Deep Learning
+- FastAPI & Backend Development
+- Android App Development
+- LLMs & LangChain
+
+---
+
+## 📫 Connect With Me
+📧 Email: **nihalroman7@gmail.com**
+
+---
+⭐️ *Always open to collaborations in ML, DL, and LLM-based projects!*
