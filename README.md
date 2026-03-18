@@ -7,8 +7,8 @@
 ## 🚀 About Me
 - 🎓 **B.Sc. in Computer Science & Engineering** @ Green University of Bangladesh (CGPA: 3.85)
 - 🏆 **Academic Excellence** at Green University + Awarded **Best Project**
-- 🔭 Currently an **Administrative Intern** at Green University of Bangladesh
-- 🌱 Always learning — currently diving deeper into **LangChain** and **LangGraph**
+- 🔭 Currently working as a **Junior AI Developer** at SM Technology
+- 🌱 Always learning — currently diving deeper into **OpenCV** and **YOLO**
 - 🌍 Languages: Bangla (C2), English (C1)
 
 ---
