@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Roman Nihal
 
-🎯 **Entry-Level AI Engineer** | Passionate about **Machine Learning**, **Deep Learning**, and **Android Development**
+🎯 **Junior AI Developer** | Passionate about **Machine Learning**, **Deep Learning**, and **AI**
 
 ---
 
