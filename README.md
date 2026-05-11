@@ -2,6 +2,8 @@
 
 🎯 **Junior AI Developer** | Passionate about **Machine Learning**, **Deep Learning**, and **AI**
 
+🌐 [Portfolio](https://romannihal.github.io/Portfolio/)
+
 ---
 
 ## 🚀 About Me
