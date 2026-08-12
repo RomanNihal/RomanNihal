@@ -81,7 +81,8 @@ Frontend? I'll build it if I have to (and sometimes do, with AI). But I'd rather
 ### Activity
 
 <div align="center">
-<img src="./football.svg" alt="contribution football animation"/>
+<img src="./football_animation.svg" alt="contribution football animation"/>
+
 </div>
 
 ---

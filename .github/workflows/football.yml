@@ -22,19 +22,18 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install requests
-
-      - name: Generate football.svg
+      - name: Generate football_animation.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         run: python generate_football.py
 
-      - name: Commit and push football.svg
+
+      - name: Commit and push football_animation.svg
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add football.svg
+          git add football_animation.svg
           git diff-index --quiet HEAD || git commit -m "chore: update football animation"
           git push
+

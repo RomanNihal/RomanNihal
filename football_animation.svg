@@ -1,0 +1,949 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="792" height="139" viewBox="0 0 792 139">
+
+  <!-- Background -->
+  <rect width="792" height="139" fill="#0d1117"/>
+
+  <!-- Month labels -->
+  <text x="104" y="21" fill="#2a2a2a" font-size="7" font-family="monospace">Jan</text>
+
+  <!-- Contribution grid -->
+  <rect x="104" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="104" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="104" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="104" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="104" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="104" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="104" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="117" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="117" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="117" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="117" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="117" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="117" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="117" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="130" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="130" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="130" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="130" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="130" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="130" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="130" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="143" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="143" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="143" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="143" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="143" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="143" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="143" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="156" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="156" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="156" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="156" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="156" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="156" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="156" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="169" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="169" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="169" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="169" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="169" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="169" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="169" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="182" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="182" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="182" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="182" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="182" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="182" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="182" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="195" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="195" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="195" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="195" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="195" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="195" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="195" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="208" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="208" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="208" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="208" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="208" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="208" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="208" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="221" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="221" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="221" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="221" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="221" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="221" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="221" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="234" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="234" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="234" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="234" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="234" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="234" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="234" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="247" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="247" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="247" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="247" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="247" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="247" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="247" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="260" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="260" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="260" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="260" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="260" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="260" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="260" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="273" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="273" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="273" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="273" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="273" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="273" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="273" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="286" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="286" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="286" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="286" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="286" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="286" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="286" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="299" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="299" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="299" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="299" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="299" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="299" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="299" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="312" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="312" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="312" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="312" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="312" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="312" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="312" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="325" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="325" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="325" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="325" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="325" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="325" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="325" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="338" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="338" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="338" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="338" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="338" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="338" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="338" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="351" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="351" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="351" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="351" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="351" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="351" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="351" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="364" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="364" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="364" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="364" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="364" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="364" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="364" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="377" y="28" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="377" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="377" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="377" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="377" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="377" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="377" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="390" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="390" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="390" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="390" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="390" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="390" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="390" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="403" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="403" y="41" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="403" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="403" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="403" y="80" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="403" y="93" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="403" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="416" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="416" y="41" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="416" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="416" y="67" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="416" y="80" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="416" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="416" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="429" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="429" y="41" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="429" y="54" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="429" y="67" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="429" y="80" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="429" y="93" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="429" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="442" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="442" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="442" y="54" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="442" y="67" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="442" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="442" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="442" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="455" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="455" y="41" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="455" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="455" y="67" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="455" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="455" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="455" y="106" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="468" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="468" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="468" y="54" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="468" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="468" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="468" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="468" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="481" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="481" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="481" y="54" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="481" y="67" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="481" y="80" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="481" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="481" y="106" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="494" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="494" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="494" y="54" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="494" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="494" y="80" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="494" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="494" y="106" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="507" y="28" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="507" y="41" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="507" y="54" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="507" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="507" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="507" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="507" y="106" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="520" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="520" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="520" y="54" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="520" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="520" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="520" y="93" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="520" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="533" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="533" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="533" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="533" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="533" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="533" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="533" y="106" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="546" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="546" y="41" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="546" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="546" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="546" y="80" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="546" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="546" y="106" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="559" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="559" y="41" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="559" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="559" y="67" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="559" y="80" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="559" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="559" y="106" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="572" y="28" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="572" y="41" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="572" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="572" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="572" y="80" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="572" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="572" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="585" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="585" y="41" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="585" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="585" y="67" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="585" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="585" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="585" y="106" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="598" y="28" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="598" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="598" y="54" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="598" y="67" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="598" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="598" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="598" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="611" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="611" y="41" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="611" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="611" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="611" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="611" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="611" y="106" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="624" y="28" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="624" y="41" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="624" y="54" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="624" y="67" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="624" y="80" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="624" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="624" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="637" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="637" y="41" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="637" y="54" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="637" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="637" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="637" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="637" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="650" y="28" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="650" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="650" y="54" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="650" y="67" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="650" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="650" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="650" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="663" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="663" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="663" y="54" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="663" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="663" y="80" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="663" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="663" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="676" y="28" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="676" y="41" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="676" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="676" y="67" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="676" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="676" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="676" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="689" y="28" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="689" y="41" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="689" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="689" y="67" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="689" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="689" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="689" y="106" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="702" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="702" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="702" y="54" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="702" y="67" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="702" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="702" y="93" width="11" height="11" rx="2" fill="#006d32"/>
+  <rect x="702" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="715" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="715" y="41" width="11" height="11" rx="2" fill="#26a641"/>
+  <rect x="715" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="715" y="67" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="715" y="80" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="715" y="93" width="11" height="11" rx="2" fill="#0e4429"/>
+  <rect x="715" y="106" width="11" height="11" rx="2" fill="#39d353"/>
+  <rect x="728" y="28" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.0725;0.0755;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="728" y="41" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.1176;0.1206;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="728" y="54" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#0e4429;#0e4429;#161b22" keyTimes="0;0.1628;0.1658;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="728" y="67" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#0e4429;#0e4429;#161b22" keyTimes="0;0.2080;0.2110;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="728" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="728" y="93" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#0e4429;#0e4429;#161b22" keyTimes="0;0.2531;0.2561;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="728" y="106" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#26a641;#26a641;#161b22" keyTimes="0;0.2983;0.3013;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="741" y="28" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.3435;0.3465;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="741" y="41" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.3886;0.3916;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="741" y="54" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="741" y="67" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.4338;0.4368;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="741" y="80" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.4789;0.4819;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="741" y="93" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#26a641;#26a641;#161b22" keyTimes="0;0.5241;0.5271;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="741" y="106" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.5693;0.5723;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="754" y="28" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="754" y="41" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="754" y="54" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.6144;0.6174;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="754" y="67" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="754" y="80" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.6596;0.6626;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="754" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="754" y="106" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="767" y="28" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#26a641;#26a641;#161b22" keyTimes="0;0.7047;0.7077;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="767" y="41" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.7499;0.7529;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="767" y="54" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.7951;0.7981;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="767" y="67" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#26a641;#26a641;#161b22" keyTimes="0;0.8402;0.8432;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="767" y="80" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="767" y="93" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#26a641;#26a641;#161b22" keyTimes="0;0.8854;0.8884;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+  <rect x="767" y="106" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#0e4429;#0e4429;#161b22" keyTimes="0;0.9305;0.9335;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
+
+  <!-- Minecraft character with kicking leg -->
+  
+  <!-- ═══ Minecraft character ═══ -->
+
+  <!-- Head (8×8 blocks) -->
+  <rect x="48"       y="38"      width="16" height="16" fill="#c68642"/>
+  <!-- Hair / dark cap top -->
+  <rect x="48"       y="38"      width="16" height="4" fill="#3d1f08"/>
+  <rect x="50"     y="42"  width="2"   height="2"   fill="#3d1f08"/>
+  <rect x="60"   y="42"  width="2"   height="2"   fill="#3d1f08"/>
+  <!-- Glasses (nerd accent) -->
+  <rect x="50"     y="42"  width="6" height="4" fill="none" stroke="#aaa" stroke-width="0.6"/>
+  <rect x="56"   y="42"  width="6" height="4" fill="none" stroke="#aaa" stroke-width="0.6"/>
+  <line x1="56"  y1="44" x2="56" y2="44" stroke="#aaa" stroke-width="0.5"/>
+  <!-- Eyes inside glasses -->
+  <rect x="50"     y="44"  width="4" height="2"   fill="#1a1a1a"/>
+  <rect x="58"   y="44"  width="4" height="2"   fill="#1a1a1a"/>
+  <!-- Mouth -->
+  <rect x="52"   y="50"  width="2"   height="2"   fill="#7a3b2a"/>
+  <rect x="58"   y="50"  width="2"   height="2"   fill="#7a3b2a"/>
+
+  <!-- Body (jersey: 8×12 blocks) -->
+  <rect x="48"       y="54"      width="16" height="24" fill="#1565c0"/>
+  <!-- Collar -->
+  <rect x="54"   y="54"      width="4" height="2"    fill="#1e88e5"/>
+  <!-- Chest stripe -->
+  <rect x="48"       y="64"  width="16" height="4"  fill="#1e88e5" opacity="0.55"/>
+  <!-- Jersey number (two vertical bars for "7" silhouette) -->
+  <rect x="54"   y="58"  width="4" height="2"   fill="#ffffff" opacity="0.45"/>
+  <rect x="56"   y="58"  width="2"   height="8" fill="#ffffff" opacity="0.45"/>
+
+  <!-- Left arm: swings back for balance -->
+  <g transform="translate(42,54) rotate(22,3,0)">
+    <rect x="0" y="0" width="6" height="20" fill="#1565c0"/>
+    <rect x="0" y="18" width="6" height="4" fill="#c68642"/>
+  </g>
+
+  <!-- Right arm: swings forward -->
+  <g transform="translate(64,54) rotate(-22,3,0)">
+    <rect x="0" y="0" width="6" height="20" fill="#1565c0"/>
+    <rect x="0" y="18" width="6" height="4" fill="#c68642"/>
+  </g>
+
+  <!-- Left leg (anatomically, on the right side of screen - static, standing) -->
+  <rect x="56"      y="78"     width="8" height="24" fill="#212121"/>
+  <!-- Left boot (pointing to the right) -->
+  <rect x="56"      y="102" width="10" height="6" fill="#303030"/>
+
+  <!-- Right leg + boot — animated via animateTransform (kicks forward) -->
+  <g transform="translate(48,78)">
+    <g id="rleg">
+      <animateTransform attributeName="transform" type="rotate" values="0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0; 0 4 0; 15 4 0; -55 4 0; -20 4 0; 0 4 0; 0 4 0" keyTimes="0.0000; 0.0484; 0.0529; 0.0597; 0.0710; 0.0823; 0.0916; 0.0935; 0.0981; 0.1048; 0.1161; 0.1274; 0.1368; 0.1387; 0.1432; 0.1500; 0.1613; 0.1726; 0.1819; 0.1839; 0.1884; 0.1952; 0.2065; 0.2177; 0.2271; 0.2290; 0.2335; 0.2403; 0.2516; 0.2629; 0.2723; 0.2742; 0.2787; 0.2855; 0.2968; 0.3081; 0.3174; 0.3194; 0.3239; 0.3306; 0.3419; 0.3532; 0.3626; 0.3645; 0.3690; 0.3758; 0.3871; 0.3984; 0.4077; 0.4097; 0.4142; 0.4210; 0.4323; 0.4435; 0.4529; 0.4548; 0.4594; 0.4661; 0.4774; 0.4887; 0.4981; 0.5000; 0.5045; 0.5113; 0.5226; 0.5339; 0.5432; 0.5452; 0.5497; 0.5565; 0.5677; 0.5790; 0.5884; 0.5903; 0.5948; 0.6016; 0.6129; 0.6242; 0.6335; 0.6355; 0.6400; 0.6468; 0.6581; 0.6694; 0.6787; 0.6806; 0.6852; 0.6919; 0.7032; 0.7145; 0.7239; 0.7258; 0.7303; 0.7371; 0.7484; 0.7597; 0.7690; 0.7710; 0.7755; 0.7823; 0.7935; 0.8048; 0.8142; 0.8161; 0.8206; 0.8274; 0.8387; 0.8500; 0.8594; 0.8613; 0.8658; 0.8726; 0.8839; 0.8952; 0.9045; 0.9065; 0.9110; 0.9177; 0.9290; 0.9403; 1.0000" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1" dur="31.00s" repeatCount="indefinite" additive="replace"/>
+      <rect x="0" y="0"           width="8" height="24"  fill="#212121"/>
+      <!-- Boot extends one block to the right of leg -->
+      <rect x="0" y="24"    width="10" height="6"  fill="#303030"/>
+    </g>
+  </g>
+  <!-- Kick animation applied to right leg inside its parent group -->
+  <style>
+    #rleg { /* fallback target for CSS if SMIL doesn't fire */ }
+  </style>
+
+  <!-- animateTransform lives inside #rleg itself for SMIL compliance -->
+  <!-- (injected via the char string above; see kick_animate_transform below) -->
+
+  <!-- Balls (one per animated commit) -->
+  
+  <!-- ─ Ball 0 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.0553; 0.0583; 0.0755; 0.0803; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q406.8,16.9 733.5,33.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.0583; 0.0755; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 1 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.1005; 0.1035; 0.1206; 0.1255; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q406.8,23.4 733.5,46.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.1035; 0.1206; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 2 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.1456; 0.1486; 0.1658; 0.1706; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q406.8,29.9 733.5,59.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.1486; 0.1658; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 3 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.1908; 0.1938; 0.2110; 0.2158; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q406.8,36.4 733.5,72.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.1938; 0.2110; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 4 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.2360; 0.2390; 0.2561; 0.2610; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q406.8,49.4 733.5,98.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.2390; 0.2561; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 5 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.2811; 0.2841; 0.3013; 0.3061; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q406.8,55.9 733.5,111.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.2841; 0.3013; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 6 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3263; 0.3293; 0.3465; 0.3513; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q413.3,16.9 746.5,33.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.3293; 0.3465; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 7 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.3715; 0.3745; 0.3916; 0.3965; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q413.3,23.4 746.5,46.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.3745; 0.3916; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 8 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4166; 0.4196; 0.4368; 0.4416; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q413.3,36.4 746.5,72.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.4196; 0.4368; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 9 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.4618; 0.4648; 0.4819; 0.4868; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q413.3,42.9 746.5,85.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.4648; 0.4819; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 10 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.5069; 0.5099; 0.5271; 0.5319; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q413.3,49.4 746.5,98.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.5099; 0.5271; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 11 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.5521; 0.5551; 0.5723; 0.5771; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q413.3,55.9 746.5,111.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.5551; 0.5723; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 12 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.5973; 0.6003; 0.6174; 0.6223; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q419.8,29.9 759.5,59.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.6003; 0.6174; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 13 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6424; 0.6454; 0.6626; 0.6674; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q419.8,42.9 759.5,85.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.6454; 0.6626; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 14 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.6876; 0.6906; 0.7077; 0.7126; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q426.3,16.9 772.5,33.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.6906; 0.7077; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 15 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7327; 0.7357; 0.7529; 0.7577; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q426.3,23.4 772.5,46.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.7357; 0.7529; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 16 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.7779; 0.7809; 0.7981; 0.8029; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q426.3,29.9 772.5,59.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.7809; 0.7981; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 17 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8231; 0.8261; 0.8432; 0.8481; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q426.3,36.4 772.5,72.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.8261; 0.8432; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 18 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.8682; 0.8712; 0.8884; 0.8932; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q426.3,49.4 772.5,98.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.8712; 0.8884; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ─ Ball 19 ─ -->
+  <g>
+    <circle r="5.5" fill="#eeeeee" stroke="#3a3a3a" stroke-width="0.8"/>
+    <!-- Central pentagon -->
+    <polygon points="0,-3.8 3.6,-1.2 2.2,3.2 -2.2,3.2 -3.6,-1.2"
+             fill="#111111" opacity="0.78"/>
+    <!-- Spokes from pentagon corners to ball edge -->
+    <line x1="0"    y1="-3.8" x2="0"    y2="-5.5" stroke="#777" stroke-width="0.45"/>
+    <line x1="3.6"  y1="-1.2" x2="5.3"  y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <line x1="2.2"  y1="3.2"  x2="3.3"  y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-2.2" y1="3.2"  x2="-3.3" y2="5.0"  stroke="#777" stroke-width="0.45"/>
+    <line x1="-3.6" y1="-1.2" x2="-5.3" y2="-1.8" stroke="#777" stroke-width="0.45"/>
+    <!-- Opacity animation -->
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.9134; 0.9164; 0.9335; 0.9384; 1"
+             calcMode="discrete"
+             dur="31.00s" repeatCount="indefinite"/>
+    <!-- Arc motion + spin -->
+    <animateMotion path="M80.0,90.3 Q426.3,55.9 772.5,111.5"
+                   keyPoints="0; 0; 1; 1" keyTimes="0; 0.9164; 0.9335; 1"
+                   calcMode="linear"
+                   rotate="auto"
+                   dur="31.00s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Footer -->
+  <text x="396" y="135" text-anchor="middle"
+    fill="#1e1e1e" font-size="8" font-family="monospace" letter-spacing="1">
+    773 contributions this year
+  </text>
+
+</svg>
