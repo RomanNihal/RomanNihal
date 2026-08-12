@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 185" width="460" height="185">
+<defs>
+<style>
+  .bg{fill:#0d1117}
+  .cf{stroke:#1a1a1a;stroke-width:.8;fill:none}
+  .n{fill:#0d1117;stroke-width:1.5}
+  .nl{font-size:7px;font-family:'JetBrains Mono','Courier New',monospace;text-anchor:middle;dominant-baseline:central;fill:#333333}
+  .lb{fill:#1d1d1d;font-size:7px;font-family:'JetBrains Mono','Courier New',monospace;letter-spacing:2px}
+
+  /* 10s loop: forward pass + backprop */
+
+  /* input node glows (forward, 8-28%) */
+  @keyframes i0{0%,8%,30%,82%,100%{stroke:#252525}14%,23%{stroke:#888888}}
+  @keyframes i1{0%,11%,30%,82%,100%{stroke:#252525}17%,25%{stroke:#888888}}
+  @keyframes i2{0%,14%,30%,82%,100%{stroke:#252525}20%,27%{stroke:#888888}}
+
+  /* hidden node glows (forward, 45-65%) */
+  @keyframes h0{0%,45%,65%,82%,100%{stroke:#252525}51%,59%{stroke:#888888}}
+  @keyframes h1{0%,48%,65%,82%,100%{stroke:#252525}54%,62%{stroke:#888888}}
+  /* h2: starts to glow then DROPS OUT */
+  @keyframes h2s{0%,52%,100%{stroke:#252525}54%,56%{stroke:#555555}}
+  @keyframes h2o{0%,56%,100%{opacity:1}57%,67%{opacity:0.05}}
+  @keyframes h3{0%,54%,66%,82%,100%{stroke:#252525}59%,64%{stroke:#888888}}
+
+  /* output node glow (forward, 73-84%) */
+  @keyframes o0{0%,73%,85%,100%{stroke:#252525;stroke-width:1.5}77%,83%{stroke:#cccccc;stroke-width:2}}
+
+  /* input node backprop glow (88-98%) */
+  @keyframes ib0{0%,88%,100%{stroke:#252525}91%,97%{stroke:#6a3030}}
+  @keyframes ib1{0%,89%,100%{stroke:#252525}92%,97%{stroke:#6a3030}}
+  @keyframes ib2{0%,90%,100%{stroke:#252525}93%,97%{stroke:#6a3030}}
+
+  .ai0{animation:i0 10s ease-in-out infinite}
+  .ai1{animation:i1 10s ease-in-out infinite}
+  .ai2{animation:i2 10s ease-in-out infinite}
+  .ah0{animation:h0 10s ease-in-out infinite}
+  .ah1{animation:h1 10s ease-in-out infinite}
+  .ah2s{animation:h2s 10s ease-in-out infinite}
+  .ah2o{animation:h2o 10s ease-in-out infinite}
+  .ah3{animation:h3 10s ease-in-out infinite}
+  .ao0{animation:o0 10s ease-in-out infinite}
+  .ab0{animation:ib0 10s ease-in-out infinite}
+  .ab1{animation:ib1 10s ease-in-out infinite}
+  .ab2{animation:ib2 10s ease-in-out infinite}
+</style>
+</defs>
+
+<!-- background -->
+<rect class="bg" width="460" height="185"/>
+
+<!-- layer labels -->
+<text class="lb" x="85" y="18" text-anchor="middle">INPUT</text>
+<text class="lb" x="230" y="18" text-anchor="middle">HIDDEN</text>
+<text class="lb" x="375" y="18" text-anchor="middle">OUTPUT</text>
+
+<!-- forward connection lines: input->hidden -->
+<line class="cf" x1="85"  y1="45"  x2="230" y2="33"/>
+<line class="cf" x1="85"  y1="45"  x2="230" y2="70"/>
+<line class="cf" x1="85"  y1="45"  x2="230" y2="107"/>
+<line class="cf" x1="85"  y1="45"  x2="230" y2="144"/>
+<line class="cf" x1="85"  y1="88"  x2="230" y2="33"/>
+<line class="cf" x1="85"  y1="88"  x2="230" y2="70"/>
+<line class="cf" x1="85"  y1="88"  x2="230" y2="107"/>
+<line class="cf" x1="85"  y1="88"  x2="230" y2="144"/>
+<line class="cf" x1="85"  y1="130" x2="230" y2="33"/>
+<line class="cf" x1="85"  y1="130" x2="230" y2="70"/>
+<line class="cf" x1="85"  y1="130" x2="230" y2="107"/>
+<line class="cf" x1="85"  y1="130" x2="230" y2="144"/>
+<!-- forward connection lines: hidden->output -->
+<line class="cf" x1="230" y1="33"  x2="375" y2="88"/>
+<line class="cf" x1="230" y1="70"  x2="375" y2="88"/>
+<line class="cf" x1="230" y1="107" x2="375" y2="88"/>
+<line class="cf" x1="230" y1="144" x2="375" y2="88"/>
+
+<!-- ========= FORWARD SIGNALS: input -> hidden (25%-43%) ========= -->
+<!-- i0->h0 -->
+<circle r="2.5" fill="#666666">
+  <animate attributeName="cx" values="85;85;230;85;85" keyTimes="0;0.25;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="45;45;33;45;45"  keyTimes="0;0.25;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.25;0.43;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- i1->h1 -->
+<circle r="2.5" fill="#666666">
+  <animate attributeName="cx" values="85;85;230;85;85" keyTimes="0;0.27;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="88;88;70;88;88"  keyTimes="0;0.27;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.27;0.43;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- i2->h2 (signal reaches the dropout node) -->
+<circle r="2.5" fill="#666666">
+  <animate attributeName="cx" values="85;85;230;85;85"    keyTimes="0;0.28;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="130;130;107;130;130" keyTimes="0;0.28;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.28;0.43;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- i0->h3 diagonal -->
+<circle r="2" fill="#444444">
+  <animate attributeName="cx" values="85;85;230;85;85"  keyTimes="0;0.26;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="45;45;144;45;45"  keyTimes="0;0.26;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.26;0.43;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- i2->h0 cross -->
+<circle r="2" fill="#444444">
+  <animate attributeName="cx" values="85;85;230;85;85"    keyTimes="0;0.29;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="130;130;33;130;130" keyTimes="0;0.29;0.43;0.431;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.29;0.43;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+
+<!-- ========= FORWARD SIGNALS: hidden -> output (60%-73%) ========= -->
+<!-- h0->out -->
+<circle r="2.5" fill="#999999">
+  <animate attributeName="cx" values="230;230;375;230;230" keyTimes="0;0.60;0.73;0.731;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="33;33;88;33;33"     keyTimes="0;0.60;0.73;0.731;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.60;0.73;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- h1->out -->
+<circle r="2.5" fill="#999999">
+  <animate attributeName="cx" values="230;230;375;230;230" keyTimes="0;0.61;0.73;0.731;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="70;70;88;70;70"     keyTimes="0;0.61;0.73;0.731;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.61;0.73;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- h3->out (h2 is dropped, no signal from it) -->
+<circle r="2.5" fill="#999999">
+  <animate attributeName="cx" values="230;230;375;230;230"  keyTimes="0;0.63;0.73;0.731;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="144;144;88;144;144"  keyTimes="0;0.63;0.73;0.731;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.63;0.73;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+
+<!-- ========= BACKPROP SIGNALS: output -> hidden (83%-93%) - dim maroon ========= -->
+<!-- out->h0 -->
+<circle r="2" fill="#8a4040">
+  <animate attributeName="cx" values="375;375;230;375;375" keyTimes="0;0.83;0.93;0.931;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="88;88;33;88;88"     keyTimes="0;0.83;0.93;0.931;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.83;0.93;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- out->h1 -->
+<circle r="2" fill="#8a4040">
+  <animate attributeName="cx" values="375;375;230;375;375" keyTimes="0;0.84;0.93;0.931;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="88;88;70;88;88"     keyTimes="0;0.84;0.93;0.931;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.84;0.93;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- out->h3 (h2 skipped - it's still dropped) -->
+<circle r="2" fill="#8a4040">
+  <animate attributeName="cx" values="375;375;230;375;375"  keyTimes="0;0.85;0.93;0.931;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="88;88;144;88;88"     keyTimes="0;0.85;0.93;0.931;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.85;0.93;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+
+<!-- ========= BACKPROP SIGNALS: hidden -> input (88%-97%) ========= -->
+<!-- h0->i0 -->
+<circle r="1.8" fill="#5a2525">
+  <animate attributeName="cx" values="230;230;85;230;230" keyTimes="0;0.88;0.97;0.971;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="33;33;45;33;33"    keyTimes="0;0.88;0.97;0.971;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.88;0.97;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- h1->i1 -->
+<circle r="1.8" fill="#5a2525">
+  <animate attributeName="cx" values="230;230;85;230;230" keyTimes="0;0.89;0.97;0.971;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="70;70;88;70;70"    keyTimes="0;0.89;0.97;0.971;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.89;0.97;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+<!-- h3->i2 -->
+<circle r="1.8" fill="#5a2525">
+  <animate attributeName="cx" values="230;230;85;230;230"  keyTimes="0;0.90;0.97;0.971;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="144;144;130;144;144" keyTimes="0;0.90;0.97;0.971;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.90;0.97;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</circle>
+
+<!-- ========= NODES ========= -->
+
+<!-- INPUT nodes (also glow on backprop phase) -->
+<circle cx="85" cy="45"  r="13" class="n ai0 ab0"/>
+<text x="85" y="46" class="nl">x&#x2081;</text>
+
+<circle cx="85" cy="88"  r="13" class="n ai1 ab1"/>
+<text x="85" y="89" class="nl">x&#x2082;</text>
+
+<circle cx="85" cy="130" r="13" class="n ai2 ab2"/>
+<text x="85" y="131" class="nl">x&#x2083;</text>
+
+<!-- HIDDEN nodes -->
+<circle cx="230" cy="33"  r="13" class="n ah0"/>
+<text x="230" y="34" class="nl">&#x03C3;</text>
+
+<circle cx="230" cy="70"  r="13" class="n ah1"/>
+<text x="230" y="71" class="nl">&#x03C3;</text>
+
+<!-- h2: dropout node -->
+<g class="ah2o">
+  <circle cx="230" cy="107" r="13" class="n ah2s"/>
+  <text x="230" y="108" class="nl">&#x03C3;</text>
+</g>
+
+<circle cx="230" cy="144" r="13" class="n ah3"/>
+<text x="230" y="145" class="nl">&#x03C3;</text>
+
+<!-- OUTPUT node -->
+<circle cx="375" cy="88" r="13" class="n ao0"/>
+<text x="375" y="89" class="nl">&#x0177;</text>
+
+<!-- ========= ANNOTATIONS ========= -->
+
+<!-- Dropout label: appears when h2 drops (57%-67%) -->
+<text x="255" y="101" font-size="6px" font-family="'JetBrains Mono','Courier New',monospace" fill="#4a2020" letter-spacing="0.5px">
+  # p=0.5
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.56;0.57;0.67;0.68;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</text>
+
+<!-- Phase label: FORWARD PASS (visible 0-82%) -->
+<text x="230" y="178" text-anchor="middle" font-size="8px" font-family="'JetBrains Mono','Courier New',monospace" letter-spacing="2px" fill="#1d1d1d">
+  FORWARD  PASS
+  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.81;0.82;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</text>
+
+<!-- Phase label: BACKPROP (visible 82-100%) -->
+<text x="230" y="178" text-anchor="middle" font-size="8px" font-family="'JetBrains Mono','Courier New',monospace" letter-spacing="2px" fill="#3a1515">
+  &#x2207;  BACKPROP
+  <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.81;0.82;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+</text>
+
+</svg>
