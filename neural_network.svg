@@ -2,33 +2,34 @@
 <defs>
 <style>
   .bg{fill:#0d1117}
-  .cf{stroke:#1a1a1a;stroke-width:.8;fill:none}
+  .cf{stroke:#2a303c;stroke-width:.8;fill:none}
   .n{fill:#0d1117;stroke-width:1.5}
-  .nl{font-size:7px;font-family:'JetBrains Mono','Courier New',monospace;text-anchor:middle;dominant-baseline:central;fill:#333333}
-  .lb{fill:#1d1d1d;font-size:7px;font-family:'JetBrains Mono','Courier New',monospace;letter-spacing:2px}
+  .nl{font-size:7px;font-family:'JetBrains Mono','Courier New',monospace;text-anchor:middle;dominant-baseline:central;fill:#ffffff}
+  .lb{fill:#8b949e;font-size:7px;font-family:'JetBrains Mono','Courier New',monospace;letter-spacing:2px}
 
   /* 10s loop: forward pass + backprop */
 
   /* input node glows (forward, 8-28%) */
-  @keyframes i0{0%,8%,30%,82%,100%{stroke:#252525}14%,23%{stroke:#888888}}
-  @keyframes i1{0%,11%,30%,82%,100%{stroke:#252525}17%,25%{stroke:#888888}}
-  @keyframes i2{0%,14%,30%,82%,100%{stroke:#252525}20%,27%{stroke:#888888}}
+  @keyframes i0{0%,8%,30%,82%,100%{stroke:#30363d}14%,23%{stroke:#58a6ff}}
+  @keyframes i1{0%,11%,30%,82%,100%{stroke:#30363d}17%,25%{stroke:#58a6ff}}
+  @keyframes i2{0%,14%,30%,82%,100%{stroke:#30363d}20%,27%{stroke:#58a6ff}}
 
   /* hidden node glows (forward, 45-65%) */
-  @keyframes h0{0%,45%,65%,82%,100%{stroke:#252525}51%,59%{stroke:#888888}}
-  @keyframes h1{0%,48%,65%,82%,100%{stroke:#252525}54%,62%{stroke:#888888}}
+  @keyframes h0{0%,45%,65%,82%,100%{stroke:#30363d}51%,59%{stroke:#58a6ff}}
+  @keyframes h1{0%,48%,65%,82%,100%{stroke:#30363d}54%,62%{stroke:#58a6ff}}
   /* h2: starts to glow then DROPS OUT */
-  @keyframes h2s{0%,52%,100%{stroke:#252525}54%,56%{stroke:#555555}}
-  @keyframes h2o{0%,56%,100%{opacity:1}57%,67%{opacity:0.05}}
-  @keyframes h3{0%,54%,66%,82%,100%{stroke:#252525}59%,64%{stroke:#888888}}
+  @keyframes h2s{0%,52%,100%{stroke:#30363d}54%,56%{stroke:#8b949e}}
+  @keyframes h2o{0%,56%,100%{opacity:1}57%,67%{opacity:0.15}}
+  @keyframes h3{0%,54%,66%,82%,100%{stroke:#30363d}59%,64%{stroke:#58a6ff}}
 
   /* output node glow (forward, 73-84%) */
-  @keyframes o0{0%,73%,85%,100%{stroke:#252525;stroke-width:1.5}77%,83%{stroke:#cccccc;stroke-width:2}}
+  @keyframes o0{0%,73%,85%,100%{stroke:#30363d;stroke-width:1.5}77%,83%{stroke:#ffffff;stroke-width:2.2}}
 
   /* input node backprop glow (88-98%) */
-  @keyframes ib0{0%,88%,100%{stroke:#252525}91%,97%{stroke:#6a3030}}
-  @keyframes ib1{0%,89%,100%{stroke:#252525}92%,97%{stroke:#6a3030}}
-  @keyframes ib2{0%,90%,100%{stroke:#252525}93%,97%{stroke:#6a3030}}
+  @keyframes ib0{0%,88%,100%{stroke:#30363d}91%,97%{stroke:#ff7b72}}
+  @keyframes ib1{0%,89%,100%{stroke:#30363d}92%,97%{stroke:#ff7b72}}
+  @keyframes ib2{0%,90%,100%{stroke:#30363d}93%,97%{stroke:#ff7b72}}
+
 
   .ai0{animation:i0 10s ease-in-out infinite}
   .ai1{animation:i1 10s ease-in-out infinite}
@@ -199,21 +200,22 @@
 <!-- ========= ANNOTATIONS ========= -->
 
 <!-- Dropout label: appears when h2 drops (57%-67%) -->
-<text x="255" y="101" font-size="6px" font-family="'JetBrains Mono','Courier New',monospace" fill="#4a2020" letter-spacing="0.5px">
+<text x="255" y="101" font-size="6px" font-family="'JetBrains Mono','Courier New',monospace" fill="#ff7b72" letter-spacing="0.5px">
   # p=0.5
   <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.56;0.57;0.67;0.68;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
 </text>
 
 <!-- Phase label: FORWARD PASS (visible 0-82%) -->
-<text x="230" y="178" text-anchor="middle" font-size="8px" font-family="'JetBrains Mono','Courier New',monospace" letter-spacing="2px" fill="#1d1d1d">
+<text x="230" y="178" text-anchor="middle" font-size="8px" font-family="'JetBrains Mono','Courier New',monospace" letter-spacing="2px" fill="#8b949e">
   FORWARD  PASS
   <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.81;0.82;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
 </text>
 
 <!-- Phase label: BACKPROP (visible 82-100%) -->
-<text x="230" y="178" text-anchor="middle" font-size="8px" font-family="'JetBrains Mono','Courier New',monospace" letter-spacing="2px" fill="#3a1515">
+<text x="230" y="178" text-anchor="middle" font-size="8px" font-family="'JetBrains Mono','Courier New',monospace" letter-spacing="2px" fill="#ff7b72">
   &#x2207;  BACKPROP
   <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.81;0.82;1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
 </text>
+
 
 </svg>

@@ -35,9 +35,10 @@ SKIN    = "#c68642"
 JERSEY  = "#1565c0"   # navy blue jersey
 JSTRIPE = "#1e88e5"   # lighter stripe
 JNUM    = "#ffffff"
-PANTS   = "#212121"
-BOOT    = "#303030"
+PANTS   = "#e5e5e5"   # light grey/white pants (high contrast)
+BOOT    = "#ff7a00"   # bright orange boots (extremely visible kick)
 LCOLORS = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+
 
 def lv(c):
     return 0 if c == 0 else 1 if c <= 2 else 2 if c <= 5 else 3 if c <= 10 else 4
@@ -455,8 +456,8 @@ def generate(weeks, total, outfile):
 # ── Entry point ───────────────────────────────────────────────────────────────
 def main():
     token    = os.environ.get("GITHUB_TOKEN", "")
-    username = (os.environ.get("USERNAME") or
-                os.environ.get("GITHUB_REPOSITORY_OWNER", "") or "romannihal")
+    username = os.environ.get("GITHUB_REPOSITORY_OWNER") or "romannihal"
+
     if not token:
         print("Note: GITHUB_TOKEN not set. Running with fallback API / mock preview mode...")
     print(f"Fetching contributions for @{username}…")
