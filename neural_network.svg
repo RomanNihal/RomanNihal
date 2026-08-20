@@ -1,239 +1,373 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 200" width="460" height="200">
 <defs>
-  <filter id="soft-glow" x="-15%" y="-15%" width="130%" height="130%">
-    <feGaussianBlur stdDeviation="1.8" result="blur"/>
+  <filter id="eye-glow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="2" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
-  <filter id="red-glow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="2.5" result="blur"/>
+  <filter id="steam-blur" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="1" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
 
-  <linearGradient id="train-grad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#22c55e" stop-opacity="0.5"/>
-    <stop offset="100%" stop-color="#22c55e" stop-opacity="0.0"/>
-  </linearGradient>
-  <linearGradient id="val-grad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#f87171" stop-opacity="0.5"/>
-    <stop offset="100%" stop-color="#f87171" stop-opacity="0.0"/>
-  </linearGradient>
-  <linearGradient id="panel-bg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#161b27"/>
-    <stop offset="100%" stop-color="#0d1117"/>
-  </linearGradient>
+  <!-- Wall-E Base Body Template -->
+  <g id="walle-base">
+    <!-- Tracks -->
+    <g fill="#1e293b" stroke="#0f172a" stroke-width="1.5">
+      <rect x="-30" y="15" width="14" height="35" rx="3"/>
+      <line x1="-30" y1="22" x2="-16" y2="22"/><line x1="-30" y1="29" x2="-16" y2="29"/>
+      <line x1="-30" y1="36" x2="-16" y2="36"/><line x1="-30" y1="43" x2="-16" y2="43"/>
+      <rect x="16" y="15" width="14" height="35" rx="3"/>
+      <line x1="16" y1="22" x2="30" y2="22"/><line x1="16" y1="29" x2="30" y2="29"/>
+      <line x1="16" y1="36" x2="30" y2="36"/><line x1="16" y1="43" x2="30" y2="43"/>
+    </g>
+    <!-- Body -->
+    <rect x="-22" y="-2" width="44" height="35" rx="3" fill="#d97706" stroke="#78350f" stroke-width="1.5"/>
+    <path d="M-22,6 L22,6 L22,-1 Q22,-2 20,-2 L-20,-2 Q-22,-2 -22,-1 Z" fill="#94a3b8" stroke="#78350f" stroke-width="1.5"/>
+    <!-- Solar panel -->
+    <rect x="2" y="12" width="15" height="10" rx="1" fill="#1e293b"/>
+    <rect x="4" y="14" width="11" height="1.5" fill="#f59e0b"/>
+    <rect x="4" y="17" width="11" height="1.5" fill="#f59e0b"/>
+    <rect x="4" y="20" width="11" height="1.5" fill="#f59e0b"/>
+    <!-- Front Details -->
+    <rect x="-16" y="12" width="12" height="15" rx="1" fill="#b45309" stroke="#78350f" stroke-width="1"/>
+  </g>
 
   <style>
-    .bg { fill: #0d1117; }
-    .panel { fill: url(#panel-bg); stroke: #21262d; stroke-width: 1; }
-    .panel-header { fill: #161b27; stroke: #21262d; stroke-width: 0.8; }
-    .axis { stroke: #30363d; stroke-width: 0.8; fill: none; }
-    .axis-label { font-family: 'Courier New', monospace; font-size: 6px; fill: #484f58; }
-    .chart-label { font-family: 'Courier New', monospace; font-size: 7.5px; fill: #94a3b8; font-weight: bold; }
-    .title-main { font-family: 'Courier New', monospace; font-size: 9px; fill: #e6edf3; font-weight: bold; letter-spacing: 0.5px; }
-    .subtitle { font-family: 'Courier New', monospace; font-size: 6px; fill: #484f58; }
-    .metric-val { font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; }
-    .metric-label { font-family: 'Courier New', monospace; font-size: 5.5px; fill: #6e7681; letter-spacing: 0.5px; }
-    .quote-text { font-family: 'Courier New', monospace; font-size: 6.5px; fill: #8b949e; font-style: italic; }
-    .badge-text { font-family: 'Courier New', monospace; font-size: 8px; font-weight: bold; fill: #0d1117; }
-    .badge-sub { font-family: 'Courier New', monospace; font-size: 4.5px; fill: #484f58; }
+    /* 15 second loop, 6 states x 2.5s each */
+    @keyframes bg-color {
+      0%, 15%       { fill: #0d2818; }
+      18%, 31%      { fill: #0d1a2e; }
+      34%, 48%      { fill: #1e1508; }
+      51%, 65%      { fill: #1e0a0a; }
+      68%, 81%      { fill: #200505; }
+      84%, 98%      { fill: #0d2818; }
+      100%          { fill: #0d2818; }
+    }
+    .scene-bg { animation: bg-color 15s step-end infinite; }
 
-    /* Training line draws itself */
-    @keyframes draw-train {
-      0% { stroke-dashoffset: 300; }
-      60%, 100% { stroke-dashoffset: 0; }
+    @keyframes stripe-color {
+      0%, 15%       { fill: #14532d; }
+      18%, 31%      { fill: #1e3a5f; }
+      34%, 48%      { fill: #78350f; }
+      51%, 65%      { fill: #7f1d1d; }
+      68%, 81%      { fill: #450a0a; }
+      84%, 98%      { fill: #14532d; }
+      100%          { fill: #14532d; }
     }
-    .line-train {
-      stroke: #22c55e; stroke-width: 1.5; fill: none;
-      stroke-dasharray: 300;
-      animation: draw-train 4s ease-out infinite;
-    }
+    .scene-stripe { animation: stripe-color 15s step-end infinite; }
 
-    /* Validation line draws with a delay then flatlines */
-    @keyframes draw-val {
-      0%, 15% { stroke-dashoffset: 280; }
-      75%, 100% { stroke-dashoffset: 0; }
-    }
-    .line-val {
-      stroke: #f87171; stroke-width: 1.5; fill: none;
-      stroke-dasharray: 280;
-      animation: draw-val 4s ease-out infinite;
-    }
+    /* Slide visibility */
+    @keyframes show-s1 { 0%, 16% { opacity: 1; } 17%, 100% { opacity: 0; } }
+    @keyframes show-s2 { 0%, 16% { opacity: 0; } 17%, 32% { opacity: 1; } 33%, 100% { opacity: 0; } }
+    @keyframes show-s3 { 0%, 32% { opacity: 0; } 33%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes show-s4 { 0%, 49% { opacity: 0; } 50%, 65% { opacity: 1; } 66%, 100% { opacity: 0; } }
+    @keyframes show-s5 { 0%, 65% { opacity: 0; } 66%, 82% { opacity: 1; } 83%, 100% { opacity: 0; } }
+    @keyframes show-s6 { 0%, 82% { opacity: 0; } 83%, 99% { opacity: 1; } 100% { opacity: 0; } }
+    
+    .slide-1 { animation: show-s1 15s step-end infinite; }
+    .slide-2 { animation: show-s2 15s step-end infinite; }
+    .slide-3 { animation: show-s3 15s step-end infinite; }
+    .slide-4 { animation: show-s4 15s step-end infinite; }
+    .slide-5 { animation: show-s5 15s step-end infinite; }
+    .slide-6 { animation: show-s6 15s step-end infinite; }
 
-    /* Train metric counter ticks up */
-    @keyframes fade-in-metric {
-      0%, 10% { opacity: 0; }
-      40%, 100% { opacity: 1; }
+    /* Coffee steam */
+    @keyframes steam-rise {
+      0%   { transform: translateY(0px); opacity: 0.9; }
+      100% { transform: translateY(-14px); opacity: 0; }
     }
-    .metric-appear { animation: fade-in-metric 4s ease-out infinite; }
+    .steam-l { animation: steam-rise 1.4s ease-out infinite; }
+    .steam-m { animation: steam-rise 1.4s ease-out infinite; animation-delay: 0.45s; }
+    .steam-r { animation: steam-rise 1.4s ease-out infinite; animation-delay: 0.9s; }
 
-    /* Grade badge pop */
-    @keyframes badge-pop {
-      0%, 50% { transform: scale(0.8); opacity: 0; }
-      65% { transform: scale(1.1); opacity: 1; }
-      75%, 100% { transform: scale(1.0); opacity: 1; }
+    /* Sweat drop */
+    @keyframes sweat-drop {
+      0%, 50%   { transform: translateY(0px); opacity: 1; }
+      100%      { transform: translateY(8px); opacity: 0; }
     }
-    .badge-anim { animation: badge-pop 4s ease-out infinite; transform-origin: 398px 85px; }
+    .sweat { animation: sweat-drop 1.2s ease-in infinite; }
 
-    /* Val flatline blink */
-    @keyframes flatline-blink {
-      0%, 74% { opacity: 0; }
-      80%, 88% { opacity: 1; }
-      92% { opacity: 0; }
-      96%, 100% { opacity: 1; }
+    /* Dead X eyes flicker */
+    @keyframes x-flicker {
+      0%, 85%, 100% { opacity: 1; }
+      90%, 95%      { opacity: 0.2; }
     }
-    .flatline-tag { animation: flatline-blink 4s ease-out infinite; }
+    .dead-eyes { animation: x-flicker 1.8s step-end infinite; }
 
-    /* Confetti stars (train celebration) */
-    @keyframes star1 {
-      0%, 55% { opacity: 0; transform: translate(0,0) rotate(0deg); }
-      65% { opacity: 1; transform: translate(-4px,-6px) rotate(45deg); }
-      80%, 100% { opacity: 0; transform: translate(-6px,-12px) rotate(90deg); }
+    /* Heart float on coffee slide */
+    @keyframes heart-float {
+      0%   { transform: translate(0,0) scale(1); opacity: 1; }
+      100% { transform: translate(4px,-18px) scale(0.6); opacity: 0; }
     }
-    @keyframes star2 {
-      0%, 58% { opacity: 0; transform: translate(0,0) rotate(0deg); }
-      68% { opacity: 1; transform: translate(5px,-7px) rotate(-30deg); }
-      82%, 100% { opacity: 0; transform: translate(7px,-13px) rotate(-60deg); }
-    }
-    @keyframes star3 {
-      0%, 60% { opacity: 0; transform: translate(0,0) scale(0.5); }
-      70% { opacity: 1; transform: translate(-2px,-5px) scale(1.2); }
-      85%, 100% { opacity: 0; transform: translate(-3px,-10px) scale(0); }
-    }
-    .star1 { animation: star1 4s ease-out infinite; transform-origin: 175px 40px; }
-    .star2 { animation: star2 4s ease-out infinite; transform-origin: 175px 40px; }
-    .star3 { animation: star3 4s ease-out infinite; transform-origin: 175px 40px; }
+    .heart { animation: heart-float 2s ease-out infinite; }
+    .heart2 { animation: heart-float 2s ease-out infinite; animation-delay: 0.8s; }
 
-    /* Scanning epoch line */
-    @keyframes epoch-scan {
-      0% { transform: translateX(0px); opacity: 0.8; }
-      90% { transform: translateX(145px); opacity: 0.8; }
-      91%, 100% { opacity: 0; }
-    }
-    .epoch-scan { animation: epoch-scan 4s linear infinite; }
+    .caption    { font-family: 'Courier New', monospace; font-size: 11px; fill: #e2e8f0; }
+    .caption-sm { font-family: 'Courier New', monospace; font-size: 9px; fill: #64748b; }
+    .time-text  { font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; }
   </style>
 </defs>
 
-<!-- Background -->
-<rect class="bg" width="460" height="200"/>
+<!-- Animated Background -->
+<rect class="scene-bg" width="460" height="200"/>
+<!-- Left accent stripe -->
+<rect class="scene-stripe" x="0" y="0" width="6" height="200"/>
 
 <!-- Top header bar -->
-<rect x="0" y="0" width="460" height="26" fill="#161b27"/>
-<line x1="0" y1="26" x2="460" y2="26" stroke="#21262d" stroke-width="0.8"/>
+<rect fill="#00000040" x="0" y="0" width="460" height="28"/>
+<text font-family="'Courier New',monospace" font-size="7.5px" fill="#374151" x="16" y="18" letter-spacing="1">AI ENGINEER MOOD TRACKER</text>
 
-<!-- Header dots (macOS style) -->
-<circle cx="14" cy="13" r="3.5" fill="#ef4444"/>
-<circle cx="24" cy="13" r="3.5" fill="#eab308"/>
-<circle cx="34" cy="13" r="3.5" fill="#22c55e"/>
+<!-- TIME LABELS -->
+<text class="time-text slide-1" x="420" y="19" text-anchor="end" fill="#4ade80">09:00 AM</text>
+<text class="time-text slide-2" x="420" y="19" text-anchor="end" fill="#60a5fa">11:00 AM</text>
+<text class="time-text slide-3" x="420" y="19" text-anchor="end" fill="#fbbf24">01:00 PM</text>
+<text class="time-text slide-4" x="420" y="19" text-anchor="end" fill="#f97316">03:00 PM</text>
+<text class="time-text slide-5" x="420" y="19" text-anchor="end" fill="#f87171">05:00 PM</text>
+<text class="time-text slide-6" x="420" y="19" text-anchor="end" fill="#4ade80">05:01 PM</text>
 
-<!-- Header title -->
-<text class="title-main" x="50" y="17">Model Performance Dashboard</text>
-<text class="subtitle" x="230" y="17">epoch: 100/100 | status: TRAINING COMPLETE</text>
-
-<!-- Blinking status dot -->
-<circle cx="452" cy="13" r="2.5" fill="#22c55e">
-  <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
-</circle>
-
-<!-- ─── LEFT CHART: Training Accuracy ─── -->
-<rect class="panel" x="10" y="34" width="200" height="110" rx="4"/>
-<rect class="panel-header" x="10" y="34" width="200" height="18" rx="4"/>
-<rect x="10" y="45" width="200" height="7" rx="0" fill="#161b27"/>
-<text class="chart-label" x="18" y="47" fill="#22c55e">TRAIN ACCURACY</text>
-<circle cx="192" cy="43" r="2.5" fill="#22c55e" filter="url(#soft-glow)"/>
-
-<!-- Grid lines -->
-<line class="axis" x1="30" y1="52" x2="30" y2="136"/>
-<line class="axis" x1="30" y1="136" x2="202" y2="136"/>
-<line class="axis" stroke-dasharray="2 4" x1="30" y1="95" x2="202" y2="95"/>
-<line class="axis" stroke-dasharray="2 4" x1="30" y1="73" x2="202" y2="73"/>
-
-<!-- Y axis labels -->
-<text class="axis-label" x="14" y="139">0%</text>
-<text class="axis-label" x="14" y="98">50%</text>
-<text class="axis-label" x="14" y="76">75%</text>
-<text class="axis-label" x="14" y="55">100%</text>
-
-<!-- Shaded area under training curve -->
-<polygon fill="url(#train-grad)" fill-opacity="0.4"
-  points="30,136 50,120 70,100 90,78 110,65 130,58 150,54 170,52 190,51 202,51 202,136"/>
-
-<!-- Training accuracy line: rockets upward fast then flattens near 99% -->
-<polyline class="line-train" filter="url(#soft-glow)"
-  points="30,136 50,120 70,100 90,78 110,65 130,58 150,54 170,52 190,51 202,51"/>
-
-<!-- Epoch scanning vertical line -->
-<line class="epoch-scan" x1="30" y1="52" x2="30" y2="136" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.25"/>
-
-<!-- Confetti stars at peak -->
-<text class="star1" x="168" y="54" font-size="8px" fill="#fbbf24">*</text>
-<text class="star2" x="168" y="54" font-size="7px" fill="#22c55e">+</text>
-<text class="star3" x="168" y="54" font-size="6px" fill="#60a5fa">*</text>
-
-<!-- Train metric -->
-<text class="metric-val metric-appear" x="18" y="158" fill="#22c55e" filter="url(#soft-glow)">99.9%</text>
-<text class="metric-label" x="18" y="167">FINAL TRAIN ACC.</text>
-
-<!-- ─── RIGHT CHART: Validation Accuracy ─── -->
-<rect class="panel" x="220" y="34" width="200" height="110" rx="4"/>
-<rect class="panel-header" x="220" y="34" width="200" height="18" rx="4"/>
-<rect x="220" y="45" width="200" height="7" rx="0" fill="#161b27"/>
-<text class="chart-label" x="228" y="47" fill="#f87171">VALIDATION ACCURACY</text>
-<circle cx="402" cy="43" r="2.5" fill="#f87171" filter="url(#red-glow)"/>
-
-<!-- Grid lines right -->
-<line class="axis" x1="240" y1="52" x2="240" y2="136"/>
-<line class="axis" x1="240" y1="136" x2="412" y2="136"/>
-<line class="axis" stroke-dasharray="2 4" x1="240" y1="95" x2="412" y2="95"/>
-<line class="axis" stroke-dasharray="2 4" x1="240" y1="73" x2="412" y2="73"/>
-
-<!-- Y axis labels right -->
-<text class="axis-label" x="224" y="139">0%</text>
-<text class="axis-label" x="224" y="98">50%</text>
-<text class="axis-label" x="224" y="76">75%</text>
-<text class="axis-label" x="224" y="55">100%</text>
-
-<!-- Shaded area under val curve -->
-<polygon fill="url(#val-grad)" fill-opacity="0.35"
-  points="240,136 260,120 280,103 300,96 320,94 340,95 360,95 380,94 400,95 412,95 412,136"/>
-
-<!-- Val line: rises a bit, then flatlines sadly at ~51% -->
-<polyline class="line-val" filter="url(#red-glow)"
-  points="240,136 260,120 280,103 300,96 320,94 340,95 360,95 380,94 400,95 412,95"/>
-
-<!-- Flatline label -->
-<g class="flatline-tag">
-  <rect x="340" y="84" width="65" height="12" rx="2" fill="#7f1d1d" stroke="#f87171" stroke-width="0.7"/>
-  <text x="344" y="93" font-family="'Courier New',monospace" font-size="6px" fill="#fca5a5">-- FLATLINED AT 51% --</text>
+<!-- ═══════════════════════════
+     SLIDE 1: COFFEE ONLY
+═══════════════════════════ -->
+<g class="slide-1">
+  <g transform="translate(52, 42)">
+    <ellipse cx="58" cy="118" rx="46" ry="7" fill="#000000" opacity="0.3"/>
+    <ellipse cx="58" cy="113" rx="44" ry="8" fill="#a16207" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="18" y="42" width="80" height="68" rx="10" fill="#92400e" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="24" y="48" width="68" height="20" rx="5" fill="#78350f"/>
+    <rect x="24" y="50" width="12" height="30" rx="4" fill="#ffffff" opacity="0.06"/>
+    <path d="M98,58 C120,58 120,90 98,90" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <path class="steam-l" d="M35,38 C31,28 38,18 34,6" fill="none" stroke="#fde68a" stroke-width="2" stroke-linecap="round" filter="url(#steam-blur)"/>
+    <path class="steam-m" d="M58,38 C54,26 61,15 57,2" fill="none" stroke="#fde68a" stroke-width="2" stroke-linecap="round" filter="url(#steam-blur)"/>
+    <path class="steam-r" d="M81,38 C77,28 84,18 80,6" fill="none" stroke="#fde68a" stroke-width="2" stroke-linecap="round" filter="url(#steam-blur)"/>
+    <text class="heart"  x="98" y="32" font-size="14px" fill="#fb7185">&#x2665;</text>
+    <text class="heart2" x="108" y="44" font-size="10px" fill="#f9a8d4">&#x2665;</text>
+  </g>
+  <text class="caption" x="228" y="92" font-size="13px" fill="#4ade80" font-weight="bold">First coffee.</text>
+  <text class="caption" x="228" y="112">Today we build AGI.</text>
+  <text class="caption-sm" x="228" y="155">-- agentic_pipeline_v1.py</text>
+  <text class="caption-sm" x="228" y="168">-- status: optimistic</text>
 </g>
 
-<!-- Val metric -->
-<text class="metric-val metric-appear" x="228" y="158" fill="#f87171" filter="url(#red-glow)">51.2%</text>
-<text class="metric-label" x="228" y="167">FINAL VAL. ACC.</text>
-
-<!-- ─── GRADE BADGE ─── -->
-<g class="badge-anim">
-  <rect x="430" y="155" width="22" height="22" rx="3" fill="#1f6feb" stroke="#388bfd" stroke-width="1"/>
-  <text class="badge-text" x="436" y="170" fill="#ffffff">A+</text>
+<!-- ═══════════════════════════
+     SLIDE 2: NEUTRAL ROBOT
+═══════════════════════════ -->
+<g class="slide-2">
+  <g transform="translate(110, 115)">
+    <use href="#walle-base"/>
+    <!-- Left Arm (Resting) -->
+    <g transform="translate(-24, 8) rotate(70)">
+      <rect x="-20" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M-20,-3 L-26,-8 M-20,3 L-26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <!-- Right Arm (Resting) -->
+    <g transform="translate(24, 8) rotate(110)">
+      <rect x="0" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M20,-3 L26,-8 M20,3 L26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Neck and Head -->
+    <g transform="translate(0, 0)">
+      <rect x="-4" y="-25" width="8" height="25" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <line x1="-4" y1="-15" x2="4" y2="-15" stroke="#475569" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="5" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+      <!-- Eyes -->
+      <g transform="translate(-15, -25) rotate(5)">
+        <rect x="-16" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="2" cy="-1" r="8.5" fill="#1e293b"/>
+        <circle cx="2" cy="-1" r="6" fill="#60a5fa" filter="url(#eye-glow)"/>
+        <circle cx="0" cy="-3" r="1.5" fill="#ffffff"/>
+      </g>
+      <g transform="translate(15, -25) rotate(-5)">
+        <rect x="-14" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="-2" cy="-1" r="8.5" fill="#1e293b"/>
+        <circle cx="-2" cy="-1" r="6" fill="#60a5fa" filter="url(#eye-glow)"/>
+        <circle cx="-4" cy="-3" r="1.5" fill="#ffffff"/>
+      </g>
+    </g>
+  </g>
+  <text class="caption" x="228" y="92" font-size="12px" fill="#60a5fa" font-weight="bold">Hmm.</text>
+  <text class="caption" x="228" y="112">Agent called the</text>
+  <text class="caption" x="228" y="130">wrong tool. Again.</text>
+  <text class="caption-sm" x="228" y="155">-- tool_calls: 47</text>
+  <text class="caption-sm" x="228" y="168">-- correct: 3</text>
 </g>
-<text class="badge-sub" x="427" y="183">train only</text>
 
-<!-- ─── BOTTOM QUOTE ─── -->
-<line x1="10" y1="174" x2="450" y2="174" stroke="#21262d" stroke-width="0.7"/>
-<text class="quote-text" x="230" y="187" text-anchor="middle">
-  "My model is 99% accurate. Please ignore the second chart."
-</text>
+<!-- ═══════════════════════════
+     SLIDE 3: ANNOYED ROBOT
+═══════════════════════════ -->
+<g class="slide-3">
+  <g transform="translate(110, 115)">
+    <use href="#walle-base"/>
+    <g transform="translate(-24, 8) rotate(85)">
+      <rect x="-20" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M-20,-3 L-26,-8 M-20,3 L-26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(24, 8) rotate(95)">
+      <rect x="0" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M20,-3 L26,-8 M20,3 L26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(0, 3)">
+      <rect x="-4" y="-25" width="8" height="25" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <line x1="-4" y1="-15" x2="4" y2="-15" stroke="#475569" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="5" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+      <g transform="translate(-15, -25) rotate(18)">
+        <rect x="-16" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="2" cy="-1" r="8.5" fill="#1e293b"/>
+        <circle cx="2" cy="-1" r="6" fill="#fbbf24" filter="url(#eye-glow)"/>
+        <circle cx="0" cy="-3" r="1.5" fill="#ffffff"/>
+      </g>
+      <g transform="translate(15, -25) rotate(-18)">
+        <rect x="-14" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="-2" cy="-1" r="8.5" fill="#1e293b"/>
+        <circle cx="-2" cy="-1" r="6" fill="#fbbf24" filter="url(#eye-glow)"/>
+        <circle cx="-4" cy="-3" r="1.5" fill="#ffffff"/>
+      </g>
+    </g>
+  </g>
+  <text class="caption" x="228" y="92" font-size="12px" fill="#fbbf24" font-weight="bold">Seriously?</text>
+  <text class="caption" x="228" y="112">Context window</text>
+  <text class="caption" x="228" y="130">exceeded. Obviously.</text>
+  <text class="caption-sm" x="228" y="155">-- tokens: 128k/128k</text>
+  <text class="caption-sm" x="228" y="168">-- RAG chunk: still wrong</text>
+</g>
 
-<!-- Legend bottom left -->
-<rect x="10" y="174" width="6" height="6" rx="1" fill="#22c55e"/>
-<text class="metric-label" x="19" y="180" fill="#6e7681">Train</text>
-<rect x="48" y="174" width="6" height="6" rx="1" fill="#f87171"/>
-<text class="metric-label" x="57" y="180" fill="#6e7681">Validation</text>
+<!-- ═══════════════════════════
+     SLIDE 4: FRUSTRATED ROBOT
+═══════════════════════════ -->
+<g class="slide-4">
+  <g transform="translate(110, 115)">
+    <use href="#walle-base"/>
+    <g transform="translate(-24, 8) rotate(-30)">
+      <rect x="-20" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M-20,-3 L-26,-8 M-20,3 L-26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(24, 8) rotate(210)">
+      <rect x="0" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M20,-3 L26,-8 M20,3 L26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(0, 6)">
+      <rect x="-4" y="-25" width="8" height="25" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <line x1="-4" y1="-15" x2="4" y2="-15" stroke="#475569" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="5" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+      <g transform="translate(-15, -25) rotate(28)">
+        <rect x="-16" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="2" cy="-1" r="8.5" fill="#1e293b"/>
+        <circle cx="2" cy="-1" r="6" fill="#f97316" filter="url(#eye-glow)"/>
+        <circle cx="0" cy="-3" r="1.5" fill="#ffffff"/>
+      </g>
+      <g transform="translate(15, -25) rotate(-28)">
+        <rect x="-14" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="-2" cy="-1" r="8.5" fill="#1e293b"/>
+        <circle cx="-2" cy="-1" r="6" fill="#f97316" filter="url(#eye-glow)"/>
+        <circle cx="-4" cy="-3" r="1.5" fill="#ffffff"/>
+      </g>
+    </g>
+    <!-- Sweat drop -->
+    <ellipse class="sweat" cx="30" cy="-35" rx="3" ry="5" fill="#93c5fd" opacity="0.8"/>
+  </g>
+  <text class="caption" x="228" y="90" font-size="12px" fill="#f97316" font-weight="bold">ARE YOU KIDDING.</text>
+  <text class="caption" x="228" y="112">Vector DB returned</text>
+  <text class="caption" x="228" y="130">garbage.</text>
+  <text class="caption-sm" x="228" y="155">-- cosine_similarity: 0.08</text>
+  <text class="caption-sm" x="228" y="168">-- embeddings: completely wrong</text>
+</g>
+
+<!-- ═══════════════════════════
+     SLIDE 5: DEAD ROBOT
+═══════════════════════════ -->
+<g class="slide-5">
+  <g transform="translate(110, 115)">
+    <use href="#walle-base"/>
+    <g transform="translate(-24, 8) rotate(100)">
+      <rect x="-20" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M-20,-3 L-26,-8 M-20,3 L-26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(24, 8) rotate(80)">
+      <rect x="0" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M20,-3 L26,-8 M20,3 L26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(0, 5)">
+      <rect x="-4" y="-25" width="8" height="25" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <line x1="-4" y1="-15" x2="4" y2="-15" stroke="#475569" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="5" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+      <g transform="translate(-15, -25) rotate(-25)">
+        <rect x="-16" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="2" cy="-1" r="8.5" fill="#1e293b"/>
+        <g class="dead-eyes">
+          <line x1="-3" y1="-6" x2="7" y2="4" stroke="#f87171" stroke-width="2" stroke-linecap="round"/>
+          <line x1="7" y1="-6" x2="-3" y2="4" stroke="#f87171" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g transform="translate(15, -25) rotate(25)">
+        <rect x="-14" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="-2" cy="-1" r="8.5" fill="#1e293b"/>
+        <g class="dead-eyes">
+          <line x1="-7" y1="-6" x2="3" y2="4" stroke="#f87171" stroke-width="2" stroke-linecap="round"/>
+          <line x1="3" y1="-6" x2="-7" y2="4" stroke="#f87171" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <text class="caption" x="228" y="95" font-size="12px" fill="#f87171" font-weight="bold">...</text>
+  <text class="caption" x="228" y="115">Agent hallucinating</text>
+  <text class="caption" x="228" y="133">AND stuck in a loop.</text>
+  <text class="caption-sm" x="228" y="158">-- loop_count: 847 and climbing</text>
+  <text class="caption-sm" x="228" y="171">-- confidence: 99.9% (wrong)</text>
+</g>
+
+<!-- ═══════════════════════════
+     SLIDE 6: HAPPY ROBOT
+═══════════════════════════ -->
+<g class="slide-6">
+  <g transform="translate(110, 115)">
+    <use href="#walle-base"/>
+    <g transform="translate(-24, 8) rotate(-120)">
+      <rect x="-20" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M-20,-3 L-26,-8 M-20,3 L-26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(24, 8) rotate(300)">
+      <rect x="0" y="-3" width="20" height="6" rx="1" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+      <path d="M20,-3 L26,-8 M20,3 L26,8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(0, -5)">
+      <rect x="-4" y="-25" width="8" height="25" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <line x1="-4" y1="-15" x2="4" y2="-15" stroke="#475569" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="5" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+      <g transform="translate(-15, -25) rotate(-12)">
+        <rect x="-16" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="2" cy="-1" r="8.5" fill="#1e293b"/>
+        <circle cx="2" cy="-1" r="6" fill="#4ade80" filter="url(#eye-glow)"/>
+        <circle cx="0" cy="-3" r="1.5" fill="#ffffff"/>
+      </g>
+      <g transform="translate(15, -25) rotate(12)">
+        <rect x="-14" y="-12" width="30" height="22" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <circle cx="-2" cy="-1" r="8.5" fill="#1e293b"/>
+        <circle cx="-2" cy="-1" r="6" fill="#4ade80" filter="url(#eye-glow)"/>
+        <circle cx="-4" cy="-3" r="1.5" fill="#ffffff"/>
+      </g>
+    </g>
+  </g>
+  <!-- Sparkles -->
+  <text x="64" y="80" font-size="10px" fill="#4ade80">&#x2605;</text>
+  <text x="146" y="78" font-size="8px" fill="#fbbf24">&#x2605;</text>
+  <text x="154" y="100" font-size="6px" fill="#4ade80">&#x2605;</text>
+  <text class="caption" x="228" y="98" font-size="12px" fill="#4ade80" font-weight="bold">Fixed the prompt.</text>
+  <text class="caption" x="228" y="118">Shipped.</text>
+  <text class="caption" x="228" y="136">See you tomorrow.</text>
+  <text class="caption-sm" x="228" y="161">-- git push origin main</text>
+  <text class="caption-sm" x="228" y="174">-- pipeline: ONLINE</text>
+</g>
+
+<!-- Bottom bar -->
+<rect fill="#00000050" x="0" y="185" width="460" height="15"/>
+<text font-family="'Courier New',monospace" font-size="6px" fill="#374151" x="16" y="195">Roman Nihal - AI Engineer</text>
+<text font-family="'Courier New',monospace" font-size="6px" fill="#374151" x="310" y="195">Agentic AI | RAG | LLM Fine-tuning</text>
 
 </svg>
