@@ -390,6 +390,7 @@
   <rect x="780" y="67" width="11" height="11" rx="2" fill="#161b22"/>
   <rect x="780" y="80" width="11" height="11" rx="2" fill="#161b22"><animate attributeName="fill" values="#161b22;#161b22;#006d32;#006d32;#161b22" keyTimes="0;0.9305;0.9335;0.9871;1" calcMode="discrete" dur="31.00s" repeatCount="indefinite"/></rect>
   <rect x="780" y="93" width="11" height="11" rx="2" fill="#161b22"/>
+  <rect x="780" y="106" width="11" height="11" rx="2" fill="#161b22"/>
 
   <!-- Minecraft character with kicking leg -->
   
